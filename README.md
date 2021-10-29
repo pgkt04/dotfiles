@@ -1,2 +1,2 @@
 # dotfiles
- 
+currently for osx
