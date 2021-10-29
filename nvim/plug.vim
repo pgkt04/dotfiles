@@ -20,4 +20,4 @@ call plug#end()
 runtime ./treesitter.vim
 runtime ./telescope.vim
 runtime ./coc.vim
-
+runtime ./copilot.vim
