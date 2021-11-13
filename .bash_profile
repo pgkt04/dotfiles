@@ -2,7 +2,7 @@ alias ls='ls --color'
 alias ls='ls -G'
 
 export CLICOLOR=1
-export PS1="\u@\h:\[\e[33m\]\w\[\e[0m\]\$ "
+export PS1="\u@\h:\[\e[36m\]\w\[\e[0m\]\$ "
 export BASH_SILENCE_DEPRECATION_WARNING=1
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export EDITOR=nvim
