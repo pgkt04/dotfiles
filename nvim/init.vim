@@ -1,4 +1,5 @@
 let g:python_recommended_style = 0
+
 filetype plugin indent on
 syntax on
 set visualbell
@@ -12,9 +13,6 @@ set hlsearch
 set ignorecase smartcase
 set incsearch hlsearch
 set mouse=a
-"colorscheme peachpuff
-colorscheme pablo
-highlight Comment ctermfg=green
 set clipboard=unnamed
 set formatoptions-=cro
 set formatoptions-=c formatoptions-=r formatoptions-=o
@@ -25,17 +23,17 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 set backspace=2 " i have no clue if this works lol
 
 function NoTabs()
-    set expandtab
-    set softtabstop=0
-    set listchars=tab:>~,nbsp:_,trail:.
-    set list
+  set expandtab
+  set softtabstop=0
+  set listchars=tab:>~,nbsp:_,trail:.
+  set list
 endfunction
 
 function Tabs()
-    set noexpandtab
-    set softtabstop=4
-    set listchars=tab:\ \ ,nbsp:_,trail:.
-    set list
+  set noexpandtab
+  set softtabstop=4
+  set listchars=tab:\ \ ,nbsp:_,trail:.
+  set list
 endfunction
 
 call NoTabs()
@@ -53,6 +51,21 @@ command! MkTags !ctags -R .
 command! NoTabs call NoTabs()
 command! Tabs call Tabs()l
 
+" quick format on f5
+map <F5> gg=G<C-o>zz
+
+set ttimeoutlen=100
+
+
 "--------------------------------------------------------------------------------
 
 runtime ./plug.vim
+
+colorscheme OceanicNext
+
+hi Normal guibg=NONE ctermbg=NONE
+hi LineNr guibg=NONE ctermbg=NONE
+hi SignColumn guibg=NONE ctermbg=NONE
+hi EndOfBuffer guibg=NONE ctermbg=NONE
+hi Comment ctermfg=green
+
