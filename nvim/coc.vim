@@ -1,4 +1,3 @@
-
 set hidden
 set nobackup
 set nowritebackup
@@ -7,12 +6,10 @@ set updatetime=300
 set shortmess+=c
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
-if has("nvim-0.5.0") || has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
+
+" Recently vim can merge signcolumn and number column into one
+set signcolumn=number
+"set signcolumn=yes
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
@@ -149,3 +146,27 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR> 
+
+
+" https://www.reddit.com/r/vim/comments/numbf7/how_can_i_disable_autoselectandcomplete_for_coc/
+" confirms selection if any or just break line if none
+
+function! EnterSelect()
+    " if the popup is visible and an option is not selected
+    if pumvisible() && complete_info()["selected"] == -1
+        return "\<C-y>\<CR>"
+
+    " if the pum is visible and an option is selected
+    elseif pumvisible()
+        return coc#_select_confirm()
+
+    " if the pum is not visible
+    else
+        return "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+    endif
+endfunction
+
+" makes <CR> confirm selection if any or just break line if none
+inoremap <silent><expr> <cr> EnterSelect()
+
+
