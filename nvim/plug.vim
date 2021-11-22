@@ -14,8 +14,20 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
 
-" Coc
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Autocomplete
+Plug 'hrsh7th/nvim-cmp'
+
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+
+" For vsnip users.
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/vim-vsnip'
+
 
 " Vinegar
 Plug 'tpope/vim-vinegar'
@@ -30,6 +42,16 @@ call plug#end()
 
 runtime ./treesitter.vim
 runtime ./telescope.vim
-runtime ./coc.vim
 runtime ./copilot.vim
+runtime ./completion.vim
+runtime ./lsp.vim
+
+
+colorscheme OceanicNext
+
+hi Normal guibg=NONE ctermbg=NONE
+hi LineNr guibg=NONE ctermbg=NONE
+hi SignColumn guibg=NONE ctermbg=NONE
+hi EndOfBuffer guibg=NONE ctermbg=NONE
+hi Comment ctermfg=green
 
