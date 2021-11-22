@@ -1,5 +1,4 @@
-alias ls='ls --color'
-alias ls='ls -G'
+alias ls='ls --color -G'
 
 export CLICOLOR=1
 export PS1="\u@\h:\[\e[36m\]\w\[\e[0m\]\$ "
