@@ -7,6 +7,15 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set number
+
+" automatic hybrid toggle
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
+  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
+augroup END
+
+
 set ai
 set ruler
 set hlsearch
@@ -45,4 +54,3 @@ map <F5> gg=G<C-o>zz
 set ttimeoutlen=100
 
 runtime ./plug.vim
-
