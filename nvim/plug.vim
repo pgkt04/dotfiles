@@ -36,10 +36,6 @@ Plug 'mhartington/oceanic-next'
 " Autopairs
 Plug 'jiangmiao/auto-pairs'
 
-" Smoothscroll
-Plug 'psliwka/vim-smoothie'
-
-
 call plug#end()
 
 runtime ./treesitter.vim
