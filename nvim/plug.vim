@@ -42,7 +42,7 @@ runtime ./treesitter.vim
 runtime ./telescope.vim
 runtime ./copilot.vim
 runtime ./completion.vim
-runtime ./lsp.vim
+"runtime ./lsp.vim
 
 
 colorscheme OceanicNext
