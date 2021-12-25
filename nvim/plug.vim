@@ -12,12 +12,10 @@ Plug 'nvim-telescope/telescope.nvim'
 
 " LSP
 Plug 'neovim/nvim-lspconfig'
-Plug 'williamboman/nvim-lsp-installer'
+"Plug 'williamboman/nvim-lsp-installer'
 
 " Autocomplete
 Plug 'hrsh7th/nvim-cmp'
-
-Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
