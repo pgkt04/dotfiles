@@ -80,6 +80,10 @@ lua <<EOF
   require('lspconfig')['clangd'].setup {
     capabilities = capabilities
   }
+  
+  -- disable diagnostics https://www.reddit.com/r/neovim/comments/kx8de9/hiding_virtual_text_for_stopped_working/
+  vim.lsp.handlers["textDocument/publishDiagnostics"] = nil
+
 
 EOF
 
