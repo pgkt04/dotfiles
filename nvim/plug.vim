@@ -31,10 +31,15 @@ lua << EOF
       },
     },
   }
+
+vim.diagnostic.config({
+  virtual_text = false,
+  float = { border = "rounded" }, 
+})
+
 EOF
 
-lua <<EOF
-EOF
+nnoremap gh <cmd>lua vim.diagnostic.open_float(1, {scope="line"})<cr>
 
 " Copilot config
 nnoremap <leader>cs <cmd>Copilot status<cr>
@@ -67,3 +72,4 @@ require'nvim-treesitter.configs'.setup {
   }
 }
 EOF
+
