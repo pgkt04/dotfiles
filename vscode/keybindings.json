@@ -1,0 +1,19 @@
+// Place your key bindings in this file to override the defaults
+[
+    { 
+        "key": "shift+enter",           
+        "command": "-workbench.action.terminal.sendSequence",
+        "when": "terminalFocus && terminalShellIntegrationEnabled && !accessibilityModeEnabled && terminalShellType == 'pwsh'",
+        "args": {"text":"\u001b[24~c"} 
+    },
+    { 
+        "key": "shift+enter",           
+        "command": "-jupyter.execSelectionInteractive",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.ownsSelection && !findInputFocussed && !jupyter.webExtension && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    { 
+        "key": "shift+enter",        
+        "command": "-python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'" 
+    },
+]
