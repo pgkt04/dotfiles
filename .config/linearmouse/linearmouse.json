@@ -1,0 +1,150 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
+  "schemes" : [
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "vendorID" : "0x46d",
+          "productID" : "0xb025",
+          "productName" : "MX Anywhere 3"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 1,
+        "disableAcceleration" : true
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : false
+        },
+        "acceleration" : {
+          "vertical" : 1
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "vendorID" : "0x46d",
+          "productID" : "0xb037",
+          "productName" : "MX Anywhere 3S"
+        }
+      },
+      "pointer" : {
+        "speed" : 0.0749,
+        "disableAcceleration" : true,
+        "acceleration" : 1
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : false
+        },
+        "acceleration" : {
+          "vertical" : 1
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "vendorID" : "0x46d",
+          "productID" : "0xc547",
+          "productName" : "USB Receiver"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 1.1,
+        "disableAcceleration" : true
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "vendorID" : "0x17ef",
+          "productID" : "0x60ee",
+          "productName" : "TrackPoint Keyboard II"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 1,
+        "disableAcceleration" : true,
+        "speed" : 0.0689655172413792768
+      },
+      "scrolling" : {
+        "distance" : "auto",
+        "acceleration" : 0,
+        "reverse" : {
+          "vertical" : true
+        },
+        "speed" : 10
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "trackpad",
+          "vendorID" : "0x4c",
+          "productID" : "0x265",
+          "productName" : "Apple Trackpad"
+        }
+      },
+      "pointer" : {
+        "disableAcceleration" : false,
+        "acceleration" : 2,
+        "speed" : 0.0689655172413792768
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "trackpad",
+          "vendorID" : "0x5ac",
+          "productID" : "0x265",
+          "productName" : "Magic Trackpad"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 2,
+        "speed" : 0.0689655172413792768,
+        "disableAcceleration" : false
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "vendorID" : "0x3297",
+          "productID" : "0x1977",
+          "productName" : "Voyager"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 2.5
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        }
+      }
+    }
+  ]
+}

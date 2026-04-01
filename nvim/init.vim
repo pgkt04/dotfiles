@@ -29,4 +29,4 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 set backspace=2 " i have no clue if this works lol
 
-runtime ./plug.vim
+colorscheme vim
